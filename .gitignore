@@ -1,2 +1,6 @@
 .DS_Store
 *.wbproj
+03_Machine_Learning
+src/pedestrians/data/Test
+src/pedestrians/data/Train/
+src/pedestrians/data/Val/
