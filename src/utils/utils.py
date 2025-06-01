@@ -15,10 +15,13 @@ from tqdm import tqdm
 
 class Utils:
     
-    def __init__(self, raw_path, processed_path):
+    def __init__(self, raw_path = None, processed_path = None):
+      self.raw_path = raw_path
+      self.processed_path = processed_path
+      self.pickle_file = None
+      if raw_path and processed_path:
         self.pickle_file = processed_path + "hog_pedestrians_dataset.pkl"
-        self.raw_path = raw_path
-        pass
+      pass
 
     def read_images(self, path_images = []):
         """
